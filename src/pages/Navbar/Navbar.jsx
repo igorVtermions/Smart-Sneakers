@@ -16,7 +16,7 @@ export function Navbar(){
                 </div>
                 <input type="search" name="search" className="search" placeholder="qual seu Sneakers ?    🔎"  />
 
-                <button className="btn">Entrar</button>
+                <Link className="btn" to="/login">Entrar</Link>
                 
             </nav>
         </Nav>

@@ -9,7 +9,7 @@ export function Home (){
 
     return(
         <Container>
-            <div className="">
+            <div >
                 <Carousel wrapAround={true}>
                     <img src= {BannerOne} />
                     <img src= {BannerTwo} />

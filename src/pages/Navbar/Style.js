@@ -72,6 +72,10 @@ img{
     font-weight: bolder;
     cursor: pointer;
     transition: all .4s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
 }
 
 .btn:hover{
