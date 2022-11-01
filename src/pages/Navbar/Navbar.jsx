@@ -10,7 +10,7 @@ export function Navbar(){
                 <div className="NavLinks">
                 <Link to="/" ><img src={logo} alt="logo" /> </Link>
                 <ul>
-                    <li><a href="">Catalogo</a></li>
+                    <li><a href="">Catálogo</a></li>
                     <li><a href="">Contatos</a></li>
                 </ul>
                 </div>

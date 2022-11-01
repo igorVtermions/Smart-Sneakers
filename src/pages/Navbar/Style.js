@@ -28,9 +28,14 @@ li{
     margin-left: 10px;
     font-size: 20px;
     font-weight: bolder;
+    transition: all .4s ease-in-out;
+    padding: 5px;
 }
 
-
+li:hover{
+    border-radius:3px;
+    border-bottom: 3px solid #0090cb;  
+}
 
 a{
     color: white;
