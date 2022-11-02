@@ -12,10 +12,25 @@ export const Container = styled.section`
     }
 
     .slider-container{
-        width: 1200px;
+        width: 75rem;
     }
 
-  
-  
+    .content{
+        border-top: 2px solid white;
+        margin-top: 30px;
+        width: 100%;
+    }
 
+    h2{
+        padding: 20px;
+    }
+
+    .card{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        width: 99%;
+        
+    }
 `
