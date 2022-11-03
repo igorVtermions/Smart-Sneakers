@@ -13,7 +13,7 @@ export function Home() {
       name: 'Air Jordan 4',
       image: 'https://cdn.discordapp.com/attachments/1037425403985399841/1037449685356527769/11420221410911.webp',
       sizes: 'tamanho disponível: | 39 | 40 | 42 | 43 | 44 | 45 |',
-      price: 'R$ 1,400'
+      price: 'R$ 1400,00'
     },
     {
       name: 'Nike Air Max 720',
