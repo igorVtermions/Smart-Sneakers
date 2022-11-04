@@ -30,11 +30,13 @@ li{
     font-weight: bolder;
     transition: all .4s ease-in-out;
     padding: 5px;
+    cursor: pointer;
 }
 
 li:hover{
     border-radius:3px;
-    border-bottom: 3px solid #0090cb;  
+    border-bottom: 3px solid #0090cb; 
+    color: #0090cb;
 }
 
 a{
@@ -81,6 +83,25 @@ img{
 .btn:hover{
     color: white;
     background-color: #0090cb;
+}
+
+.btnNav{
+    display: flex;
+    align-items: center;
+}
+
+.cart{
+    padding: 10px;
+    font-size: 30px;
+    color: white;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.cart:hover{
+    color: green;
 }
 
 
