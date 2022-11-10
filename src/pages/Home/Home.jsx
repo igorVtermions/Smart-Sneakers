@@ -128,9 +128,7 @@ const [modalOpen, setModalOpen] = useState(false)
  
         <Modal isOpen={modalOpen}
         onRequestClose={closeModal}
-        style={customStyles}
-        
-        >
+        style={customStyles}>
             <ModalCard modalCard={modalCard} list={list} className="cardModal"/>
         </Modal>
     </Container>

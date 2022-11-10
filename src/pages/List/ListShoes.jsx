@@ -1,9 +1,23 @@
 import { useState } from "react";
 import { Container } from "./style";
 import Modal from 'react-modal'
-
+import { ModalCard } from './modal/ModalCard'
+ 
 
 Modal.setAppElement('#root');
+const customStyles = {
+  content: {
+    top: '50%',
+    left: '50%',
+    right: 'auto',
+    bottom: 'auto',
+    marginRight: '-50%',
+    transform: 'translate(-50%, -50%)',
+    width: '70rem',
+    height: '55rem',
+    border: '2px solid #0090cb',
+  },
+};
 
 export function ListShoes(){
 
@@ -383,11 +397,10 @@ export function ListShoes(){
           </div>
 
           <Modal isOpen={modalOpen}
-          onRequestClose={closeModal}>
-              <div>
-                
-              </div>
-          </Modal>
+          onRequestClose={closeModal}
+          style={customStyles}>
+              <ModalCard modalCard={modalCard} listShoes={listShoes} />
+            </Modal>
         </Container>
     )
 }

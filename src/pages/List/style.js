@@ -30,8 +30,8 @@ export const Container = styled.section`
         border-radius: 10px;
         padding: 10px;
         color: black;
-        width: 20rem;
-        height: 30rem;
+        width: 23rem;
+        height: 33rem;
     
     
     
@@ -54,6 +54,7 @@ export const Container = styled.section`
             width: 50%;
             align-items: center;
             justify-content: space-between;
+            margin-top: 3vh;
         }
 
         ion-icon{
@@ -136,7 +137,5 @@ export const Container = styled.section`
             background-color: #0090cb;
         }
     }
-
-    
 
 `
