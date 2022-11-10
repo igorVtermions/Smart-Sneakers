@@ -17,8 +17,8 @@ const customStyles = {
     bottom: 'auto',
     marginRight: '-50%',
     transform: 'translate(-50%, -50%)',
-    width: '40rem',
-    height: '45rem',
+    width: '70rem',
+    height: '55rem',
     border: '2px solid #0090cb',
   },
 };

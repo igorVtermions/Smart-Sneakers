@@ -1,4 +1,9 @@
+import { useState } from "react";
 import { Container } from "./style";
+import Modal from 'react-modal'
+
+
+Modal.setAppElement('#root');
 
 export function ListShoes(){
 
@@ -299,6 +304,17 @@ export function ListShoes(){
       },
     ];
 
+    const [modalCard, setModalCard] = useState([])
+    const [modalOpen, setModalOpen] = useState(false)
+
+    function openModal(item){
+      setModalCard([item])
+      setModalOpen(true)
+    }
+
+    function closeModal (){
+      setModalOpen(false)
+    }
 
      //const text = listAdidas.filter((item) => item.name === 'Adidas NMD' ).map((item) => <div>
         //<h1>{item.name}</h1>
@@ -353,7 +369,7 @@ export function ListShoes(){
             
             <h3>Escolha a marca:</h3>
             <div className="filterBrand">
-              <input type="button" value="Nike" className="btn"/>
+              <input type="button" value="Nike" className="btn" />
               <input type="button" value="Adidas" className="btn"/>
               <input type="button" value="Fila" className="btn" />
               <input type="button" value="Puma" className="btn"/>
@@ -365,6 +381,13 @@ export function ListShoes(){
           <div className="card">
           {shoes}
           </div>
+
+          <Modal isOpen={modalOpen}
+          onRequestClose={closeModal}>
+              <div>
+                
+              </div>
+          </Modal>
         </Container>
     )
 }

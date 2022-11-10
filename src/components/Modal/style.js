@@ -4,28 +4,39 @@ export const Container = styled.section`
     color: black;
     display: flex;
     justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
 
     img{
-        width: 400px;
-        border-bottom: 2px solid black;
+        width: 550px;
+        border-right: 2px solid ;
     }
     .cardModal{
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-direction: row;
+    }
+
+    .content{
+        display: flex;
+        align-items: center;
         flex-direction: column;
+        width: 35rem;
+        height: 20rem;
+        padding: 10px;
     }
 
     h2{
         font-weight: bolder;
-        font-size: 30px;
+        font-size: 50px;
         margin-top: 15px;
         margin-bottom: 15px;
     }
     p{
         font-size: 20px;
         font-weight: bolder;
-        margin-bottom: 20px;
+        
     }
 
     button{
@@ -49,7 +60,9 @@ export const Container = styled.section`
     .btn{
         display: flex;
         align-items: center;
+        justify-content: center;
         margin-top: 50px;
+        
     }
 
     #heart{
@@ -91,6 +104,29 @@ export const Container = styled.section`
     #moneyBtn:hover{
         color: green;
         border: 2px solid green;
+    }
+
+    .delivery{
+        display: flex;
+        align-items: center;
+        justify-content: center;margin-top: 7vh;
+    }
+
+    .imgDeli{
+        width: 75px;
+        border: none;
+    }
+
+    .cardCredit{
+        font-size: 14px;
+        margin-bottom: 20px;
+        color: #0090cb;
+    }
+
+    .textDelivery{
+        font-size: 15px;
+        color: #0090cb;
+        margin-left: 5px;
     }
     
 `
