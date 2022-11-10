@@ -2,33 +2,21 @@ import styled from "styled-components";
 
 export const Container = styled.section`
 
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        margin-top: 50px;
-
-    .titleShoes{
-        font-size: 30px;
-        margin-left: 10px;
-    }
-
-    .OtherShoes{
-        font-size: 30px;
-        margin-top: 30px;
-        border-top: 2px solid white;
-        padding-top: 20px;
-    }
-
+    display: flex;
+    
+   
     h2{
         padding: 10px;
     }
 
-    .Shoes{
+    .card{
        
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
         gap: 5px;
+        margin-top: 50px;
+        width: 100rem;
     }
 
     
@@ -42,53 +30,113 @@ export const Container = styled.section`
         border-radius: 10px;
         padding: 10px;
         color: black;
-        width: 25rem;
-        height: 35rem;
+        width: 20rem;
+        height: 30rem;
     
     
     
-    img{
-        width: 300px;
-        border-bottom: 2px solid black;
+        img{
+            width: 15rem;
+            border-bottom: 2px solid black;
+        }
+
+        p{
+            font-weight: bolder;
+        }
+
+        .price{
+            font-size: 25px;
+            margin: 15px;
+        }
+
+        .btn{
+            display: flex;
+            width: 50%;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        ion-icon{
+            color: red;
+            font-size: 30px;
+            cursor: pointer;
+        }
+
+        button{
+            padding: 10px;
+            font-size: 15px;
+            font-weight: bolder;
+            background-color: transparent;
+            cursor: pointer;
+            border-radius: 10px;
+            transition: all .3s ease-in-out;
+        }
+        button:hover{
+            background-color: #0090cb;
+            color: white;
+            border: 2px solid #0090cb;
+
+        }
     }
 
-   p{
-    font-weight: bolder;
-   }
+    .sideMenu{
+        margin-top: 5vh;      
 
-   .price{
-    font-size: 25px;
-    margin: 15px;
-   }
+        .content{
+             border: 2px solid white;
+             border-radius: 10px 5px 10px 5px;
+            background-color: #222020;  
+            width: 15rem;
+            height: 40rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;     
+        }
 
-   .btn{
-    display: flex;
-    width: 50%;
-    align-items: center;
-    justify-content: space-between;
-   }
+    
 
-   ion-icon{
-    color: red;
-    font-size: 30px;
-    cursor: pointer;
-   }
+        .filterValue{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 10px;
+            margin-left: 5px;
+            
+        }
 
-   button{
-    padding: 10px;
-    font-size: 15px;
-    font-weight: bolder;
-    background-color: transparent;
-    cursor: pointer;
-    border-radius: 10px;
-    transition: all .3s ease-in-out;
-   }
-   button:hover{
-       background-color: #0090cb;
-       color: white;
-       border: 2px solid #0090cb;
+        .chk{
+            width: 20px;
+            height: 15px;  
+        }
+        
+        h3{
+            padding: 10px;
+        }
 
-   }
+        .filterBrand{
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .btn{
+            padding: 10px;
+            margin: 5px;
+            background-color: transparent;
+            color: white;
+            font-size: 15px;
+            font-weight: bolder;
+            border-radius: 10px 5px 10px 5px;
+            border-color: white;
+            cursor: pointer;
+            transition: all .3s ease-in-out;
+        }
+
+        .btn:hover{
+            background-color: #0090cb;
+        }
     }
+
+    
 
 `

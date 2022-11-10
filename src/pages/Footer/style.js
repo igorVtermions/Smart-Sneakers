@@ -2,9 +2,9 @@ import styled from "styled-components";
 
 export const Container = styled.footer`
     background-color: #191A19;
-  
-  border-top: 2px solid;
-  margin-top: 30px;
+    z-index: 100;
+    border-top: 2px solid;
+    margin-top: 30px;
   
 
   .logo-footer p{
