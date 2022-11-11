@@ -61,9 +61,10 @@ export const Container = styled.section`
    }
 
    .price{
-    font-size: 25px;
-    margin: 15px;
-   }
+        font-size: 20px;
+        color: #0090cb;
+        margin: 15px;
+    }
 
    .btn{
     display: flex;

@@ -16,7 +16,6 @@ export const Container = styled.section`
         flex-wrap: wrap;
         gap: 5px;
         margin-top: 50px;
-        width: 100rem;
     }
 
     
@@ -45,7 +44,8 @@ export const Container = styled.section`
         }
 
         .price{
-            font-size: 25px;
+            font-size: 20px;
+            color: #0090cb;
             margin: 15px;
         }
 
@@ -88,7 +88,7 @@ export const Container = styled.section`
              border-radius: 10px 5px 10px 5px;
             background-color: #222020;  
             width: 15rem;
-            height: 40rem;
+            height: 46rem;
             display: flex;
             flex-direction: column;
             justify-content: center;     
