@@ -113,4 +113,30 @@ export const Container = styled.section`
         }
     }
 
+    @media(max-width: 500px){
+        .carousel img{  
+            width: 450px;
+        }
+        .slider-container{
+            width: 27rem;
+        }
+        .card{
+            margin-left: 7%;
+            width: 85%;
+        }
+    }
+
+    @media(max-width: 400px){
+        .carousel img{  
+            width: 370px;
+        }
+        .slider-container{
+            width: 23rem;
+        }
+        .card{
+            margin-left: 7%;
+            width: 85%;
+        }
+    }
+
 `

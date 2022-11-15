@@ -1,10 +1,12 @@
 import { Container } from "./style";
 
-export function ModalCard({ modalCard }) {
+export function ModalCard({ modalCard, closeModal }) {
   return (
     <Container>
       {modalCard.map((item) => (
-        <div key={item.name} className="cardModal">
+        <div key={item.name}>
+          <button className="menubtn" onClick={closeModal}><ion-icon name="close-outline"></ion-icon></button>
+          <div className="cardModal">
           <img src={item.image} alt={item.name} />
           <div className="content">
             <h2>{item.name}</h2>
@@ -27,6 +29,7 @@ export function ModalCard({ modalCard }) {
             <p className="textDelivery">Frete gratis para Suldeste e Nordeste !!</p>
             </div>
             </div>
+        </div>
         </div>
       ))}
     </Container>

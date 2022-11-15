@@ -11,9 +11,9 @@ const customStyles = {
       left: 'auto',
       right: '24%',
       bottom: 'auto',
-      marginRight: '-50%',
+      marginRight: '-74%',
       transform: 'translate(-50%, -50%)',
-      width: '25rem',
+      width: '100%',
       height: '53rem',
       border: 'none',
       backgroundColor: '#191A19',
@@ -36,8 +36,10 @@ export function Mobile(){
     return(
         <MobileContainer>
             <Link to="/" ><img src={logo} alt="logo" /> </Link>
+            <div className="btnNav">
+                <button className="menubtn"><ion-icon name="cart-outline"></ion-icon></button>
             <button className="menubtn" onClick={modalOpen}><ion-icon name="menu-outline"></ion-icon></button>
-
+            </div>
             <Modal isOpen={openModal}
         overlayClassName="Overlay"
         style={customStyles}

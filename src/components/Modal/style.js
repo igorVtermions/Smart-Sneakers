@@ -5,7 +5,7 @@ export const Container = styled.section`
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10vh;
+   
 
     img{
         width: 550px;
@@ -129,6 +129,14 @@ export const Container = styled.section`
         margin-left: 5px;
     }
 
+    .menubtn{
+    font-size: 50px;
+    background-color: transparent;
+    border: none;
+    font-weight: bolder;
+    cursor: pointer;
+    }
+
     @media(max-width: 1030px){
         .cardModal{
             flex-direction: column;
@@ -142,6 +150,31 @@ export const Container = styled.section`
     .delivery{
         margin-top: 2vh;
     }      
+    }
+
+    @media(max-width: 500px){
+        .cardModal{
+            width: 99%;
+            margin: none;
+        }
+        img{
+            width: 90%;
+    }
+
+    .delivery{
+        margin-top: 2vh;
+    }  
+    .content{
+        width: 90%;
+    }    
+    h2{
+        font-size: 40px;
+    }
+    .btnCart{
+       display: flex;
+       flex-direction: column;
+       gap: 10px;
+    }
     }
     
 `

@@ -14,11 +14,20 @@ export const MobileContainer = styled.header`
     font-weight: bolder;
 }
 
+.btnNav{
+  gap: 30px;
+}
+
 .Overlay{
   background-color: transparent;
 }
 
   @media(max-width: 900px){
     display: flex;
+  }
+  @media(max-width: 500px){
+    .menubtn{
+      font-size: 40px;
+    }
   }
 `

@@ -20,6 +20,7 @@ const customStyles = {
     width: '90%',
     height: '85%',
     border: '2px solid #0090cb',
+    zIndex: '1000'
   },
 };
 
@@ -130,7 +131,7 @@ const [modalOpen, setModalOpen] = useState(false)
         <Modal isOpen={modalOpen}
         onRequestClose={closeModal}
         style={customStyles}>
-            <ModalCard modalCard={modalCard} list={list} className="cardModal"/>
+            <ModalCard modalCard={modalCard} closeModal={closeModal} list={list} className="cardModal"/>
         </Modal>
     </Container>
   );
