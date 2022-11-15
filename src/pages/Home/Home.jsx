@@ -17,8 +17,8 @@ const customStyles = {
     bottom: 'auto',
     marginRight: '-50%',
     transform: 'translate(-50%, -50%)',
-    width: '70rem',
-    height: '50rem',
+    width: '90%',
+    height: '85%',
     border: '2px solid #0090cb',
   },
 };
@@ -26,6 +26,7 @@ const customStyles = {
 Modal.setAppElement('#root');
 
 export function Home() {
+
   const [modalCard, setModalCard] = useState([])
 
 

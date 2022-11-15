@@ -128,5 +128,20 @@ export const Container = styled.section`
         color: #0090cb;
         margin-left: 5px;
     }
+
+    @media(max-width: 1030px){
+        .cardModal{
+            flex-direction: column;
+            width: 90%;
+        }
+        img{
+        border-right: none;
+        border-bottom: 2px solid ;
+    }
+
+    .delivery{
+        margin-top: 2vh;
+    }      
+    }
     
 `

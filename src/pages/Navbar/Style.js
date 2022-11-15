@@ -104,6 +104,10 @@ img{
     color: green;
 }
 
-
+@media(max-width:900px){
+    .desktop{
+        display: none;
+    }
+}
 
 `

@@ -3,6 +3,8 @@ import logo from "../../assets/img/logo.png"
 import { Link } from "react-router-dom";
 import  Modal  from "react-modal"
 import { useState } from "react";
+import { Mobile } from "./mobile/Mobile";
+import { MobileContainer } from "./mobile/style";
 
 const customStyles = {
     content: {
@@ -33,9 +35,10 @@ export function Navbar(){
     return(
         <>
         <Nav>
-            <nav>
+            <nav className="desktop">
                 <div className="NavLinks">
                 <Link to="/" ><img src={logo} alt="logo" /> </Link>
+                
                 <ul>
                     <Link to="/list"><li>Catálogo</li></Link>
                     <li onClick={openContactModal}>Contatos</li>
@@ -46,9 +49,8 @@ export function Navbar(){
                 <div className="btnNav">
                     <button className="cart"><ion-icon name="cart-outline"></ion-icon></button>
                     <Link className="btn" to="/login">Entrar</Link>
-                </div>  
-            </nav>
-            <Modal isOpen={contactModal}
+                </div> 
+                <Modal isOpen={contactModal}
             onRequestClose={closeContactModal}
             style={customStyles} >
                 <h2>Contatos 📞</h2>
@@ -64,8 +66,11 @@ export function Navbar(){
                     <p>Twitter: @smartSneakers</p>
 
                 </div>
-            </Modal>
+            </Modal> 
+            </nav>
             
+            
+            <Mobile />
             
         </Nav>
             

@@ -96,4 +96,21 @@ export const Container = styled.section`
    }
     }
 
+    @media(max-width: 1030px){
+        .carousel img{  
+            width: 1000px;
+        }
+        .slider-container{
+            width: 60rem;
+        }
+    }
+    @media(max-width: 770px){
+        .carousel img{  
+            width: 700px;
+        }
+        .slider-container{
+            width: 43rem;
+        }
+    }
+
 `
