@@ -8,7 +8,7 @@ export const Container = styled.section`
         
 
     .carousel{
-        margin-top: 10px;   
+        margin-top: 120px;   
         border-radius: 10px ;
     }
 

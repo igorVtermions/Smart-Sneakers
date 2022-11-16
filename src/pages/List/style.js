@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
-
+    
     display: flex;
     
    
@@ -15,7 +15,7 @@ export const Container = styled.section`
         justify-content: center;
         flex-wrap: wrap;
         gap: 5px;
-        margin-top: 50px;
+        margin-top: 13vh;
     }
 
     
@@ -81,7 +81,7 @@ export const Container = styled.section`
     }
 
     .sideMenu{
-        margin-top: 5vh;      
+        margin-top: 13vh;      
 
         .content{
              border: 2px solid white;

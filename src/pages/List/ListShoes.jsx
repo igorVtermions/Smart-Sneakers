@@ -16,8 +16,11 @@ const customStyles = {
     width: '90%',
     height: '85%',
     border: '2px solid #0090cb',
+    zIndex: '1000',
+    marginTop: '5vh'   
   },
 };
+
 
 export function ListShoes(){
 
@@ -409,7 +412,7 @@ export function ListShoes(){
           <Modal isOpen={modalOpen}
           onRequestClose={closeModal}
           style={customStyles}>
-              <ModalCard modalCard={modalCard} listShoes={listShoes} />
+              <ModalCard modalCard={modalCard} closeModal={closeModal} listShoes={listShoes} />
             </Modal>
         </Container>
     )

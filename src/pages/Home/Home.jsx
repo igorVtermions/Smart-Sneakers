@@ -20,7 +20,8 @@ const customStyles = {
     width: '90%',
     height: '85%',
     border: '2px solid #0090cb',
-    zIndex: '1000'
+    zIndex: '1000',
+    marginTop: '5vh'   
   },
 };
 
@@ -112,7 +113,7 @@ const [modalOpen, setModalOpen] = useState(false)
           autoplay={true}
           className="carousel"
           enableKeyboardControls={true}
-          defaultControlsConfig={{nextButtonText:">", prevButtonText:"<", nextButtonStyle:{color: "black", fontSize:"50px", background:"transparent"}, prevButtonStyle:{color: "black", fontSize:"50px", background:"transparent"}, pagingDotsStyle:{padding:"10px"}}}
+          defaultControlsConfig={{nextButtonText:" ", prevButtonText:" ", nextButtonStyle:{color: "black", fontSize:"50px", background:"transparent"}, prevButtonStyle:{color: "black", fontSize:"50px", background:"transparent"}, pagingDotsStyle:{padding:"10px"}}}
         >
           <img src={BannerOne} />
           <img src={BannerTwo} />

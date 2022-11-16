@@ -18,7 +18,8 @@ const customStyles = {
       border: 'none',
       backgroundColor: '#191A19',
       color: 'black',
-      zIndex: '100'
+      zIndex: '100',
+      position: 'fixed'
     },
   };
 

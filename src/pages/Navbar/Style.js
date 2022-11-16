@@ -7,6 +7,9 @@ export const Nav = styled.header`
     align-items: center;
     justify-content: center;
     width: 100%;
+    position: fixed;
+    z-index: 1000;
+    background-color: #191A19;
 
 nav{
     height: 6rem;

@@ -6,6 +6,7 @@ export const MobileContainer = styled.header`
   width: 95%;
   justify-content: space-between;
 
+
 .menubtn{
     font-size: 50px;
     color: white;

@@ -5,7 +5,7 @@ color: black;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10vh;
+    margin-top: 5vh;
 
     img{
         width: 550px;
@@ -127,6 +127,14 @@ color: black;
         font-size: 15px;
         color: #0090cb;
         margin-left: 5px;
+    }
+
+    .menubtn{
+    font-size: 50px;
+    background-color: transparent;
+    border: none;
+    font-weight: bolder;
+    cursor: pointer;
     }
 
     @media(max-width: 1030px){
