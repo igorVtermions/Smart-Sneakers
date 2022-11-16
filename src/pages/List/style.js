@@ -87,31 +87,11 @@ export const Container = styled.section`
              border-radius: 10px 5px 10px 5px;
             background-color: #222020;  
             margin-top: 13vh; 
-            width: 300rem;
+            width: 50rem;
             height: 30rem;     
             display: flex;
             flex-direction: column;
             justify-content: center;     
-        }
-
-    
-
-        .filterValue{
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            padding: 10px;
-            margin-left: 5px;
-            
-        }
-
-        .chk{
-            width: 20px;
-            height: 15px;  
-        }
-        
-        h3{
-            padding: 10px;
         }
 
         .filterBrand{
@@ -126,6 +106,7 @@ export const Container = styled.section`
             background-color: transparent;
             color: white;
             font-size: 15px;
+            width: 15rem;
             font-weight: bolder;
             border-radius: 10px 5px 10px 5px;
             border-color: white;
@@ -157,12 +138,16 @@ export const Container = styled.section`
             flex-direction: row;
             margin-left: 105px;
         }
+        .btn{
+            width: auto;
+        }
 
     }
 
     @media(max-width: 500px){
         .content{
             height: 30vh;
+            margin-top: 15vh;
         }
 
         .filterBrand{
