@@ -6,6 +6,7 @@ color: black;
     justify-content: center;
     align-items: center;
     margin-top: 5vh;
+    margin-left: 7vh;
 
     img{
         width: 550px;
@@ -149,6 +150,31 @@ color: black;
 
     .delivery{
         margin-top: 2vh;
-    }      
+    }  
+    @media(max-width: 500px){
+        .cardModal{
+            width: 99%;
+            margin: none;
+            margin-left: -25px;
+        }
+        img{
+            width: 90%;
+    }
+
+    .delivery{
+        margin-top: 2vh;
+    }  
+    .content{
+        width: 90%;
+    }    
+    h2{
+        font-size: 40px;
+    }
+    .btnCart{
+       display: flex;
+       flex-direction: column;
+       gap: 10px;
+    }
+    }    
     }
 `

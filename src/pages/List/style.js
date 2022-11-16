@@ -2,9 +2,8 @@ import styled from "styled-components";
 
 export const Container = styled.section`
     
-    display: flex;
-    
-   
+    display: flex;    
+
     h2{
         padding: 10px;
     }
@@ -80,15 +79,16 @@ export const Container = styled.section`
         }
     }
 
-    .sideMenu{
-        margin-top: 13vh;      
+   
+        
 
         .content{
-             border: 2px solid white;
+            border: 2px solid white;
              border-radius: 10px 5px 10px 5px;
             background-color: #222020;  
-            width: 15rem;
-            height: 46rem;
+            margin-top: 13vh; 
+            width: 300rem;
+            height: 30rem;     
             display: flex;
             flex-direction: column;
             justify-content: center;     
@@ -138,6 +138,42 @@ export const Container = styled.section`
         .btn:hover{
             background-color: #0090cb;
         }
+    
+
+    @media(max-width: 900px){
+        flex-direction: column;
+        align-items: center;
+        
+        .card{
+            margin-top: 2vh;
+        }
+
+        .content{
+            
+            width: 95%;
+            height: 20vh;
+        }
+        .filterBrand{
+            flex-direction: row;
+            margin-left: 105px;
+        }
+
     }
 
+    @media(max-width: 500px){
+        .content{
+            height: 30vh;
+        }
+
+        .filterBrand{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            margin-left: 0;
+        }
+
+
+
+
+    }
+    
 `

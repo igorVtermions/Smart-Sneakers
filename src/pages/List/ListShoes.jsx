@@ -11,7 +11,7 @@ const customStyles = {
     left: '50%',
     right: 'auto',
     bottom: 'auto',
-    marginRight: '-50%',
+   
     transform: 'translate(-50%, -50%)',
     width: '90%',
     height: '85%',
@@ -359,39 +359,10 @@ export function ListShoes(){
 
     return(
         <Container>
-          <div className="sideMenu">
+          
             <div className="content">
               <h2>filtro:</h2>
-
-    
-            <div className="filterPrice">
-            <h3>Filtro de preço:</h3>
-                <div 
-                className="filterValue">
-                  <input type="checkbox" className="chk"/>
-                  <p>até 250 reais</p>
-                </div>
-                <div className="filterValue">
-                  <input type="checkbox" className="chk"/>
-                  <p>até 500 reais</p>
-                </div>
-                <div className="filterValue">
-                  <input type="checkbox" className="chk"/>
-                  <p>até 750 reais</p>
-                </div>
-                <div className="filterValue">
-                  <input type="checkbox" className="chk"/>
-                  <p>até 1000 reais</p>
-                </div>
-                <div className="filterValue">
-                  <input type="checkbox" className="chk"/>
-                  <p>até 1500 reais</p>
-                </div>
-                <div className="filterValue">
-                  <input type="checkbox" className="chk"/>
-                  <p>até 2000 reais</p>
-                </div>
-            </div>
+   
             
             <h3>Escolha a marca:</h3>
             <div className="filterBrand">
@@ -403,7 +374,7 @@ export function ListShoes(){
               <button className="btn" onClick={filterShoes}>Under Armour</button>
             </div>
             </div>
-          </div>
+
 
           <div className="card">
           {shoes}

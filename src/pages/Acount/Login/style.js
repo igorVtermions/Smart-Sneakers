@@ -5,7 +5,8 @@ export const Container = styled.section`
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    min-height: 70vh;
+    min-height: 80vh;
+    
 
     img{
         width: 35rem;
@@ -69,5 +70,11 @@ export const Container = styled.section`
 
     .register{
         margin-top: 10px;
+    }
+
+    @media(max-width: 500px){
+        .logo{
+            display: none;
+        }
     }
 `

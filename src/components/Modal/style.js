@@ -6,6 +6,7 @@ export const Container = styled.section`
     justify-content: center;
     align-items: center;
     margin-top: 5vh;
+    margin-left: 7vh;
    
 
     img{
@@ -157,6 +158,7 @@ export const Container = styled.section`
         .cardModal{
             width: 99%;
             margin: none;
+            margin-left: -25px;
         }
         img{
             width: 90%;
