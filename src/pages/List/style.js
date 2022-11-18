@@ -110,16 +110,9 @@ export const Container = styled.section`
             font-weight: bolder;
             border-radius: 10px 5px 10px 5px;
             border-color: white;
-            cursor: pointer;
-            transition: all .3s ease-in-out;
+            cursor: pointer;   
         }
 
-
-
-        .btn:hover{
-            background-color: #0090cb;
-        }
-    
 
     @media(max-width: 900px){
         flex-direction: column;
