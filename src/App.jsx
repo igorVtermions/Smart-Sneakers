@@ -1,13 +1,14 @@
 import { GlobalStyle } from "./global/globalStyle";
 import { RouterBrowser } from "./router/Router";
+import { AuthProvider } from "./contexts/auth";
 
 
 export function App() {
 
-  return( <>
+  return( 
+  <AuthProvider>
     <GlobalStyle />
     <RouterBrowser />
-
-  </>
+  </AuthProvider>
   )
 }

@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import  Modal  from "react-modal"
 import { useState } from "react";
 import { Mobile } from "./mobile/Mobile";
-import { MobileContainer } from "./mobile/style";
 
 const customStyles = {
     content: {
@@ -47,7 +46,7 @@ export function Navbar(){
                 <input type="search" name="search" className="search" placeholder="qual seu Sneakers ?    🔎"  />
 
                 <div className="btnNav">
-                    <button className="cart"><ion-icon name="cart-outline"></ion-icon></button>
+                    <Link to="/payment" className="cart"><ion-icon name="cart-outline"></ion-icon></Link>
                     <Link className="btn" to="/login">Entrar</Link>
                 </div> 
                 <Modal isOpen={contactModal}
@@ -68,10 +67,7 @@ export function Navbar(){
                 </div>
             </Modal> 
             </nav>
-            
-            
             <Mobile />
-            
         </Nav>
             
         </>

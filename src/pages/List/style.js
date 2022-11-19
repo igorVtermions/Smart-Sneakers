@@ -80,8 +80,6 @@ export const Container = styled.section`
     }
 
    
-        
-
         .content{
             border: 2px solid white;
              border-radius: 10px 5px 10px 5px;
@@ -148,10 +146,6 @@ export const Container = styled.section`
             grid-template-columns: auto auto auto;
             margin-left: 0;
         }
-
-
-
-
     }
     
 `
