@@ -7,6 +7,7 @@ import { Footer } from "../pages/Footer/Footer";
 import { ListShoes } from "../pages/List/ListShoes";
 import { Payment } from "../pages/Payment/Payment";
 import { useAuth } from "../hooks/useAuth"
+import { Fragment } from "react";
 
 function Private ({Item}){
     const { signed } = useAuth()
@@ -17,6 +18,7 @@ export function RouterBrowser (){
 
     return(
         <Router>
+            <Fragment>
             <Navbar />
             <Routes>
                 <Route path="/" element={<Home />}/>
@@ -26,6 +28,7 @@ export function RouterBrowser (){
                 <Route exact path="/payment" element={<Private Item={Payment} />}/>
             </Routes>
             <Footer />
+            </Fragment>
         </Router>
 
     )

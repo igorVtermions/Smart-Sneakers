@@ -2,8 +2,11 @@ import { Nav } from "./Style";
 import logo from "../../assets/img/logo.png"
 import { Link } from "react-router-dom";
 import  Modal  from "react-modal"
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { Mobile } from "./mobile/Mobile";
+import { AuthContext } from "../../contexts/auth";
+
+
 
 const customStyles = {
     content: {
@@ -31,6 +34,7 @@ export function Navbar(){
         setContactModal(false)
     }
 
+    const { user } = useContext(AuthContext)
     return(
         <>
         <Nav>
@@ -47,7 +51,7 @@ export function Navbar(){
 
                 <div className="btnNav">
                     <Link to="/payment" className="cart"><ion-icon name="cart-outline"></ion-icon></Link>
-                    <Link className="btn" to="/login">Entrar</Link>
+                    {user ? null : <Link className="btn" to="/login">Entrar</Link>}
                 </div> 
                 <Modal isOpen={contactModal}
             onRequestClose={closeContactModal}
