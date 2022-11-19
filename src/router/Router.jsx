@@ -9,7 +9,7 @@ import { Payment } from "../pages/Payment/Payment";
 import { useAuth } from "../hooks/useAuth"
 
 function Private ({Item}){
-    const signed = useAuth()
+    const { signed } = useAuth()
     return signed > 0 ? <Item /> : <Login />;
 }
 
