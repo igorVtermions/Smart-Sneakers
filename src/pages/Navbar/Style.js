@@ -107,6 +107,11 @@ img{
     color: green;
 }
 
+ion-icon{
+    font-size: 45px;
+    cursor: pointer;
+}
+
 @media(max-width:900px){
     .desktop{
         display: none;

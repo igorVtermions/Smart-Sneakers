@@ -64,4 +64,10 @@ a{
     padding: 10px;
 }
 
+ion-icon{
+    font-size: 90px;
+    cursor: pointer;
+    color: white;
+}
+
 `

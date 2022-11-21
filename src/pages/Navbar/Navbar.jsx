@@ -51,7 +51,7 @@ export function Navbar(){
 
                 <div className="btnNav">
                     <Link to="/payment" className="cart"><ion-icon name="cart-outline"></ion-icon></Link>
-                    {user ? null : <Link className="btn" to="/login">Entrar</Link>}
+                    {user ? <ion-icon name="person-circle-outline"></ion-icon> : <Link className="btn" to="/login">Entrar</Link>}
                 </div> 
                 <Modal isOpen={contactModal}
             onRequestClose={closeContactModal}
