@@ -49,6 +49,7 @@ return(
 
                 <div className="payment">
                         <h2>Escolha o Método de Pagamento</h2>
+
                         <div className="context">
                             <div className="contextInfo">
                                 <input type="radio" name="Boleto" />
@@ -66,8 +67,11 @@ return(
                                 <input type="radio" name="Cartão de Crédito" />
                                 <label htmlFor="Cartão de Crédito">Cartão de Crédito (até 12x sem juros)</label>
                             </div>
+
                         </div>
+
                 </div>
+                
             </div>
 
             <input type="button" value="🔒 Finalizar Compra"className="btn"/>
